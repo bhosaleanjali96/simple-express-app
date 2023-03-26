@@ -1,0 +1,29 @@
+GET http://localhost:4000/getusers
+
+###
+
+GET http://localhost:4000/getusers/100
+
+###
+
+POST http://localhost:4000/createuser
+Content-Type: application/json
+
+{
+    "userID":100,
+    "name":"Reema"
+}
+
+###
+
+PUT http://localhost:4000/updateuser/100
+Content-Type: application/json
+
+{
+    "userID":200,
+    "name":"Seema"
+}
+
+###
+
+DELETE http://localhost:4000/deleteuser
